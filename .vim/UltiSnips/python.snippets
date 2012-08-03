@@ -1,0 +1,16 @@
+snippet !# "Python Shebang" !b
+#!/usr/bin/env python
+
+endsnippet
+
+snippet plot "plot a function in ROOT" !b
+gROOT.Reset()
+c1 = TCanvas( 'c1', 'Example with Formula', 200, 10, 700, 500 )
+
+fun1 = TF1( 'fun1', 'abs(sin(x)/x)', 0, 10 )
+c1.SetGridx()
+c1.SetGridy()
+fun1.Draw()
+c1.Update()
+
+endsnippet

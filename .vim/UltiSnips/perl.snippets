@@ -1,0 +1,19 @@
+snippet #! "Hash Bang perl scrtip" !b
+#!/usr/local/bin/perl -w
+use strict;
+
+endsnippet
+
+snippet comline "Gets command line args" !b
+sub system_bash{
+	my @args = ( "bash", "-c", shift);
+	system(@args);
+}
+
+system_bash('insert BASH here');
+
+endsnippet
+snippet com "additional bash command" !b
+system_bash('insert BASH here');
+
+endsnippet
