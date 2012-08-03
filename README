@@ -1,1 +1,9 @@
 All my vim stuff
+
+Do this
+
+git clone https://github.com/vijaylistz/Vim.git ~.vim
+ln -s ~/.vim/vimrc ~/.vimrc
+cd ~/.vim
+git submodule init
+git submodule update
